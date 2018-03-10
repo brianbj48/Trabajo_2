@@ -1,0 +1,3 @@
+
+int PrintM();
+void Restart();
