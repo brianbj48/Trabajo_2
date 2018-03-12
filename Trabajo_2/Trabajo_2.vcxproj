@@ -148,21 +148,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="binar_executer.h" />
     <ClInclude Include="command_executer.h" />
     <ClInclude Include="operaciones_binarias.h" />
     <ClInclude Include="operaciones_logicas.h" />
     <ClInclude Include="operaciones_matematicas.h" />
     <ClInclude Include="menu.h" />
+    <ClInclude Include="operaciones_preprocesador.h" />
     <ClInclude Include="operaciones_string.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="binar_executer.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="command_executer.cpp" />
     <ClCompile Include="operaciones_binarias.cpp" />
     <ClCompile Include="operaciones_logicas.cpp" />
     <ClCompile Include="operaciones_matematicas.cpp" />
+    <ClCompile Include="operaciones_preprocesador.cpp" />
     <ClCompile Include="operaciones_string.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
