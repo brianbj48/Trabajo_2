@@ -1,7 +1,9 @@
 #include "stdafx.h"
 #include "operaciones_matematicas.h"
+#include "operaciones_preprocesador.h"
 #include "operaciones_string.h"
 #include "operaciones_binarias.h"
+#include "operaciones_logicas.h"
 #include "command_executer.h"
 #include "binar_executer.h"
 
@@ -44,7 +46,7 @@ void MenuCuadrado() {
 	std::locale::global(std::locale("spanish"));
 	int valor1;
 	system("cls");
-	std::cout << std::endl << "Por favor ingrese el primer valor a elevar" << std::endl;
+	std::cout << std::endl << "Por favor ingrese el valor a elevar" << std::endl;
 	scanf_s("%d", &valor1);
 	system("cls");
 	std::cout << std::endl << valor1 << " elevado al cuadrado es: " << Cuadrado(valor1) << std::endl;
@@ -60,7 +62,7 @@ void MenuSuma() {
 	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
 	scanf_s("%d", &valor2);
 	system("cls");
-	std::cout << std::endl << "El resultado de la suma es: " << Suma(valor1, valor2) << std::endl;
+	printf("\n%d + %d es: %d\n", valor1, valor2, Suma(valor1, valor2));
 }
 void MenuArea() {
 	std::locale::global(std::locale("spanish"));
@@ -82,19 +84,19 @@ void MenuMax() {
 	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
 	scanf_s("%d", &valor2);
 	system("cls");
-	std::cout << std::endl << "El mayor de los números es: " << Maximo(valor1, valor2) << std::endl;
+	printf("\nEl mayor entre %d y %d es: %d\n", valor1, valor2, Maximo(valor1, valor2));
 }
 void MenuConcVar() {
-
+	Preprocesador();
 }
 void MenuTextScr() {
 	std::locale::global(std::locale("spanish"));
 	std::string cadena1;
 	system("cls");
-	std::cout << std::endl << "Por favor ingrese un texto a imprimir (Máximo 100 caracreres). Finalice con punto" << std::endl;
+	std::cout << std::endl << "Por favor ingrese un texto a imprimir y finalice con un punto" << std::endl;
 	std::getline(std::cin, cadena1, '.');
 	system("cls");
-	std::cout << std::endl << "El texto ingresado es: " << std::endl << std::endl << cadena1 << std::endl;
+	std::cout << std::endl << "El texto ingresado es: "<< std::endl << cadena1 << std::endl;
 }
 void MenuCompare() {
 	std::locale::global(std::locale("spanish"));
@@ -135,5 +137,14 @@ void MenuOpBin() {
 	BExecuter(eleccion, valor1, valor2);
 }
 void MenuOpLog() {
-
+	std::locale::global(std::locale("spanish"));
+	int valor1;
+	int valor2;
+	system("cls");
+	std::cout << std::endl << "Por favor ingrese el primer valor para Swap" << std::endl;
+	scanf_s("%d", &valor1);
+	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
+	scanf_s("%d", &valor2);
+	system("cls");
+	Swap(valor1, valor2);
 }
