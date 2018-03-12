@@ -10,7 +10,7 @@ int Preprocesador() {
 	std::cout << std::endl << "Por favor ingrese el primer valor a comparar" << std::endl;
 	scanf_s("%d", &valor1);
 	system("cls");
-	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
+	std::cout << std::endl << "Escoja la segunda mitad" << std::endl;
 	scanf_s("%d", &valor2);
 	return 0;
 }
