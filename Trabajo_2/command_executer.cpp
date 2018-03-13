@@ -87,16 +87,28 @@ void MenuMax() {
 	printf("\nEl mayor entre %d y %d es: %d\n", valor1, valor2, Maximo(valor1, valor2));
 }
 void MenuConcVar() {
-	Preprocesador();
+	std::locale::global(std::locale("spanish"));
+	int valor1;
+	int valor2;
+	system("cls");
+	std::cout << std::endl << "Por favor ingrese el primer valor a comparar" << std::endl;
+	scanf_s("%d", &valor1);
+	system("cls");
+	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
+	scanf_s("%d", &valor2);
+	system("cls");
+	printf("\nEl nuevo nombre entre %d y %d es: %d\n", valor1, valor2, Preprocesador(valor1, valor2));
 }
 void MenuTextScr() {
-	std::locale::global(std::locale("spanish"));
+	Imprimir();
+
+	/*std::locale::global(std::locale("spanish"));
 	std::string cadena1;
 	system("cls");
 	std::cout << std::endl << "Por favor ingrese un texto a imprimir y finalice con un punto" << std::endl;
 	std::getline(std::cin, cadena1, '.');
 	system("cls");
-	std::cout << std::endl << "El texto ingresado es: "<< std::endl << cadena1 << std::endl;
+	std::cout << std::endl << "El texto ingresado es: "<< std::endl << cadena1 << std::endl;*/
 }
 void MenuCompare() {
 	std::locale::global(std::locale("spanish"));

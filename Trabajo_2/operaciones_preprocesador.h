@@ -1,10 +1,6 @@
 #pragma once
-#define ENERO Enero
-#define FEBRERO Febrero
-#define MARZO Marzo
-#define ABRIL Abril
-#define DOCE 12
-#define UNO 1
-#define SIETE 7
-#define VEINTE 20
-int Preprocesador();
+#define UNIR(a,b) a##b
+#define IMP printf("Este es un ejemplo de imprimir texto en pantalla con Macros\n") 
+
+int Preprocesador(int v1, int v2);
+int Imprimir();
