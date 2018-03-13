@@ -1,13 +1,11 @@
 #include "stdafx.h"
 #include "operaciones_preprocesador.h"
 
-int Preprocesador(int v1, int v2) {
+int Concatenar() {
 	std::locale::global(std::locale("spanish"));
-	int valor1;
-	int valor2;
-	
-
-	//std::cout<< "Se hubiera ejecutado la " << ENERO << SIETE<< "()";
+	int casa = 0;
+	std::cout << VNAME(casa) << " es el nombre de la variable" << std::endl;
+	std::cout << UNIR(VNAME(casa), VNAME(casa)) << " es el nuevo nombre" << std::endl;
 	return 0;
 }
 

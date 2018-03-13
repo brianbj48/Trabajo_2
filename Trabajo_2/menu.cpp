@@ -2,6 +2,8 @@
 #include "stdafx.h"
 #include "menu.h"
 #include "command_executer.h"
+#include "main.h"
+#include <cctype>
 
 //using namespace std;
 
@@ -13,17 +15,18 @@ int PrintM() {
 
 	scanf_s("%d", &eleccion);
 	system("cls");
-	if (eleccion >0 && eleccion < 10 || eleccion == 99) {
-		//std::cout << "correcto" << std::endl;
-		return eleccion;
+	if ((eleccion >0 && eleccion < 10) || eleccion == 99) {
+		if (std::isdigit(eleccion)) {
+			Restart();
+		} else return eleccion;
 	}
 	else Restart();
 }
 
 void Restart() {
-	std::cout << "Solo puede ingresar valores enteros, pulse una tecla para volver a empezar" << std::endl;
+	std::cout << "Solo puede ingresar valores enteros entre 0 y 10, pulse una tecla para volver a empezar" << std::endl;
 	_getch();
-	PrintM();
+	main();
 }
 
 

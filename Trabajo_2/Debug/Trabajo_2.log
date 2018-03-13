@@ -1,5 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (main.vcxproj, Trabajo_2.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
-  operaciones_preprocesador.cpp
-c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\operaciones_preprocesador.cpp(6): warning C4101: 'valor1': variable local sin referencia
-c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\operaciones_preprocesador.cpp(7): warning C4101: 'valor2': variable local sin referencia
+  menu.cpp
+c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\menu.cpp(24): warning C4715: 'PrintM': no todas las rutas de acceso de control devuelven un valor
   Trabajo_2.vcxproj -> C:\Users\Brian\Documents\Developer\Globant\Cplusplus\Trabajo_2\Debug\Proyecto_2.exe

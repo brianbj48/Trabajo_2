@@ -9,3 +9,4 @@ void MenuTextScr();
 void MenuCompare();
 void MenuOpBin();
 void MenuOpLog();
+void Salir();

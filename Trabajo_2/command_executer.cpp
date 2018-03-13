@@ -38,6 +38,9 @@ int Execute(int menuN) {
 		case 9:
 			MenuOpLog();
 			break;
+		case 99:
+			Salir();
+			break;
 	}
 	return 0;
 }
@@ -58,7 +61,6 @@ void MenuSuma() {
 	system("cls");
 	std::cout << std::endl << "Por favor ingrese el primer valor a sumar" << std::endl;
 	scanf_s("%d", &valor1);
-	system("cls");
 	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
 	scanf_s("%d", &valor2);
 	system("cls");
@@ -87,17 +89,7 @@ void MenuMax() {
 	printf("\nEl mayor entre %d y %d es: %d\n", valor1, valor2, Maximo(valor1, valor2));
 }
 void MenuConcVar() {
-	std::locale::global(std::locale("spanish"));
-	int valor1;
-	int valor2;
-	system("cls");
-	std::cout << std::endl << "Por favor ingrese el primer valor a comparar" << std::endl;
-	scanf_s("%d", &valor1);
-	system("cls");
-	std::cout << std::endl << "Por favor ingrese el segundo valor" << std::endl;
-	scanf_s("%d", &valor2);
-	system("cls");
-	printf("\nEl nuevo nombre entre %d y %d es: %d\n", valor1, valor2, Preprocesador(valor1, valor2));
+	Concatenar();
 }
 void MenuTextScr() {
 	Imprimir();
@@ -128,8 +120,8 @@ void MenuCompare() {
 void MenuOpBin() {
 	std::locale::global(std::locale("spanish"));
 	int eleccion;
-	int valor1;
-	int valor2;
+	unsigned int valor1;
+	unsigned int valor2;
 	system("cls");
 	std::cout << std::endl << "Elija una acción\n [1] AND\n [2] OR\n [3] Desplazar 2 bit a la izquierda\n [4] Desplazar 2 bit a la derecha " << std::endl; //ver qué pasa con los \n
 	scanf_s("%d", &eleccion);
@@ -159,4 +151,7 @@ void MenuOpLog() {
 	scanf_s("%d", &valor2);
 	system("cls");
 	Swap(valor1, valor2);
+}
+void Salir() {
+	exit(0);
 }

@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="binar_executer.h" />
     <ClInclude Include="command_executer.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="operaciones_binarias.h" />
     <ClInclude Include="operaciones_logicas.h" />
     <ClInclude Include="operaciones_matematicas.h" />
