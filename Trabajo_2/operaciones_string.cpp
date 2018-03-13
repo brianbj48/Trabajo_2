@@ -3,15 +3,15 @@
 #include <string.h>
 using namespace std;
 
-bool Comparacion(const char* cadena1,const char* cadena2) {
+bool Compare(const char* char1,const char* char2) {
 	std::locale::global(std::locale("spanish"));
 
-	if (strcmp(cadena1, cadena2) == 0) return true;
+	if (strcmp(char1, char2) == 0) return true;
 	else return false;
 }
 
-bool ComparacionAlf(const char* cadena1, const char* cadena2) {
+bool CompareAlf(const char* char1, const char* char2) {
 	std::locale::global(std::locale("spanish"));
-	if (strcmp(cadena1, cadena2) > 0) return false;
+	if (strcmp(char1, char2) > 0) return false;
 	else return true;
 }

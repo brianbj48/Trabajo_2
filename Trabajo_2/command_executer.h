@@ -1,7 +1,7 @@
 
 int Execute(int menuN);
-void MenuCuadrado();
-void MenuSuma();
+void MenuSquare();
+void MenuAdd();
 void MenuArea();
 void MenuMax();
 void MenuConcVar();
@@ -9,4 +9,4 @@ void MenuTextScr();
 void MenuCompare();
 void MenuOpBin();
 void MenuOpLog();
-void Salir();
+void Exit();

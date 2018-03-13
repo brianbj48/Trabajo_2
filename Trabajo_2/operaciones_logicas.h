@@ -1,2 +1,2 @@
 #pragma once
-int Swap(int valor1, int valor2);
+int Swap(int value1, int value2);

@@ -1,10 +1,10 @@
 
 #define PI 3.141592f
 
-int Suma(int operando1, int operando2);
+int Add(int operator1, int operator2);
 
-int Cuadrado(int operando1); 
+int Square(int operator1);
 
-float Area(float diametro);
+float Area(float diameter);
 
-int Maximo(int valor1, int valor2);
+int Max(int value1, int value2);

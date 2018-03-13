@@ -1,3 +1,3 @@
 #pragma once
-int OperacionesBinarias(int num);
+int BinaryOperations(int num);
 void PrintBinInt(int num);

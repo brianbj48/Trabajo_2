@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "operaciones_preprocesador.h"
 
-int Concatenar() {
+int Concatenate() {
 	std::locale::global(std::locale("spanish"));
 	int casa = 0;
 	std::cout << VNAME(casa) << " es el nombre de la variable" << std::endl;
@@ -9,7 +9,7 @@ int Concatenar() {
 	return 0;
 }
 
-int Imprimir() {
-	IMP;
+int Print() {
+	PRINT;
 	return 0;
 }

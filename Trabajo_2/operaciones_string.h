@@ -2,6 +2,6 @@
 #include <string.h>
 //using namespace std;
 
-bool Comparacion(const char* cadena1,const char* cadena2);
+bool Compare(const char* char1,const char* char2);
 
-bool ComparacionAlf(const char* cadena1, const char* cadena2);
+bool CompareAlf(const char* char1, const char* char2);

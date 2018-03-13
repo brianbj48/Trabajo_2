@@ -5,20 +5,18 @@
 #include "main.h"
 #include <cctype>
 
-//using namespace std;
-
 int PrintM() {
 	std::locale::global(std::locale("spanish"));
 	system("cls");
-	int eleccion;
+	int election;
 	printf("\n¡Bienvenidos! Elija una de las opciones y pulse enter\n [1] El cuadrado de un número\n [2] Sumar dos números\n [3] Area de un círculo\n [4] El máximo de dos números\n [5] Concatenado de dos nombres de variables\n [6] Imprimir un texto por pantalla\n [7] Comparación de cadena\n [8] Operaciones binarias\n [9] Operaciones lógicas\n[99] Salir\n");
 
-	scanf_s("%d", &eleccion);
+	scanf_s("%d", &election);
 	system("cls");
-	if ((eleccion >0 && eleccion < 10) || eleccion == 99) {
-		if (std::isdigit(eleccion)) {
+	if ((election >0 && election < 10) || election == 99) {
+		if (std::isdigit(election)) {
 			Restart();
-		} else return eleccion;
+		} else return election;
 	}
 	else Restart();
 }
@@ -28,36 +26,3 @@ void Restart() {
 	_getch();
 	main();
 }
-
-
-
-
-
-//
-//
-//int main(void)
-//{
-//	int num;
-//	int ch;
-//	int ok;
-//
-//	do {
-//		printf("Ingresa un entero: ");
-//		fflush(stdout);
-//		if ((ok = scanf("%d", &num)) == EOF)
-//			return EXIT_FAILURE;
-//
-//		if ((ch = getchar()) != '\n') {
-//			ok = 0;
-//
-//			while ((ch = getchar()) != EOF && ch != '\n')
-//				;
-//		}
-//	} while (!ok);
-//
-//	printf("num == %d\n", num);
-//	getchar();
-//
-//	return EXIT_SUCCESS;
-//}
-
