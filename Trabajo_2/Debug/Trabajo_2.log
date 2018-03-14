@@ -1,3 +1,16 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (main.vcxproj, Trabajo_2.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  binar_executer.cpp
+  command_executer.cpp
+c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\command_executer.cpp(76): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  main.cpp
+  menu.cpp
+  operaciones_binarias.cpp
+  operaciones_logicas.cpp
+  operaciones_matematicas.cpp
+  operaciones_preprocesador.cpp
   operaciones_string.cpp
+  Generando código...
+c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\menu.cpp(22): warning C4715: 'PrintM': no todas las rutas de acceso de control devuelven un valor
+c:\users\brian\documents\developer\globant\cplusplus\trabajo_2\trabajo_2\main.cpp(16): warning C4717: 'main': recursiva para todas las rutas de acceso de control; la función provocará el desbordamiento de la pila en tiempo de ejecución
+  LINK : no se encontró C:\Users\Brian\Documents\Developer\Globant\Cplusplus\Trabajo_2\Debug\Proyecto_2.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   Trabajo_2.vcxproj -> C:\Users\Brian\Documents\Developer\Globant\Cplusplus\Trabajo_2\Debug\Proyecto_2.exe
